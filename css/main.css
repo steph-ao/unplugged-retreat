@@ -102,6 +102,48 @@ textarea {
   width: 90%;
 }
 
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875rem;
+}
+
+h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125rem;
+}
+
+p{
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+}
+
+a{
+  color: #e2e3ed;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul li{
+  display: inline-block;
+}
+
+address{
+  font-style: normal;
+}
 /* -------------------- Base Header - Footer Styles -------------------- */
 
 header, footer{
@@ -231,6 +273,10 @@ footer p{
   flex-flow: row wrap;
 }
 
+address{
+  line-height: normal;
+}
+
 /* -------------------- Mobile Styles - FAQ Page -------------------- */
 
 /* FAQ */
@@ -241,11 +287,19 @@ footer p{
   flex-flow: row wrap;
 }
 
-.faq .content-wrapper{
+.faq-section .content-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.faq-content{
+  margin-bottom: 50px;
+}
+
+.faq-section h4{
+  line-height: 1.5rem;
 }
 
 /* ==========================================================================
@@ -337,16 +391,122 @@ footer p{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+   @media only screen and (min-width: 768px) {
+       /*---------- Tablet styles ----------*/
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+       .content-wrapper{
+         width: 85%;
+       }
+
+       /*Header, Footer*/
+       header .content-wrapper{
+         justify-content: space-between;
+       }
+
+       .header-divider{
+         width: 35%;
+       }
+
+       header nav{
+         width: 100%;
+         justify-content: flex-end;
+       }
+
+       header nav ul{
+         width: 45%;
+       }
+
+       footer .content-wrapper{
+         width: 90%;
+       }
+
+       footer .footer-content{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-flow: row wrap;
+         width: 100%;
+       }
+
+       .contact, .social{
+         width: 40%;
+         padding: 0 0 0 80px;
+       }
+
+       .copyright{
+         margin-top: 100px;
+         text-align: center;
+       }
+
+       /*----- Home Page -----*/
+
+       /*Signup*/
+       .signup .content-wrapper{
+         display: flex;
+         flex-flow: row wrap;
+       }
+
+       .form-description, .form{
+         width: 50%;
+       }
+
+       /*Features*/
+       .features-item{
+         width: 40%;
+         padding: 0 0 0 80px;
+       }
+
+       /*Reviews*/
+       .reviews .content-wrapper{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-flow: row wrap;
+       }
+
+       /*----- About Page -----*/
+
+       /*Mission*/
+       .mission-content{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+       }
+
+       .mission-content p{
+         width: 45%;
+       }
+
+       /*Contact*/
+       .contact-section .content-wrapper h1{
+         width: 100%;
+       }
+
+       .contact-content{
+         display: flex;
+         justify-content: flex-start;
+         align-items: flex-start;
+       }
+
+       /*----- FAQ Page -----*/
+       .faq-section .content-wrapper{
+         justify-conent: space-between;
+       }
+
+       .faq-section .content-wrapper h1{
+         width: 100%;
+       }
+
+       .faq-content{
+         flex-basis: 45%;
+       }
+   }
+
+   @media only screen and (min-width: 1200px) {
+      /*---------- Desktop styles ----------*/
+
+
+   }
 
 /* ==========================================================================
    Print styles.
