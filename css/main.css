@@ -144,6 +144,33 @@ ul li{
 address{
   font-style: normal;
 }
+
+.signup .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* -------------------- Base Header - Footer Styles -------------------- */
 
 header, footer{
@@ -151,6 +178,7 @@ header, footer{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
 
 header{
@@ -163,10 +191,14 @@ header .content-wrapper{
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+  width: 100%;
 }
 
 .header-divider{
-  width: 100%;
+  width: 111%;
+  justify-content: center;
+  border-top: 2px solid #3a3a3a;
+  margin-top: 10px;
 }
 
 header nav{
@@ -174,13 +206,24 @@ header nav{
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
 }
 
 header nav ul{
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  width: 60%;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+header nav ul li{
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+footer{
+  color: #ffffff;
+  text-align: center;
 }
 
 footer .content-wrapper{
@@ -203,6 +246,14 @@ footer p{
   margin: 0;
 }
 
+.copyright p{
+  margin-bottom: 10px;
+}
+
+.contact h4{
+  margin: 55px 0 20px 0;
+}
+
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
 /* Hero Area */
@@ -218,6 +269,16 @@ footer p{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  color: #ffffff;
+}
+
+.signup h3{
+  font-weight: normal;
+}
+
+.form{
+  margin-bottom: 55px;
 }
 
 /* Features */
@@ -233,6 +294,7 @@ footer p{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  text-align: center;
 }
 
 .features-item{
@@ -249,10 +311,22 @@ footer p{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.reviews h2{
+  font-weight: normal;
 }
 
 .reviews h3{
   width: 55%;
+  font-weight: normal;
+}
+
+.prior-retreat p{
+  margin-bottom: 50px;
 }
 
 /* -------------------- Mobile Styles - About Page -------------------- */
@@ -263,6 +337,16 @@ footer p{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  color: #ffffff;
+}
+
+.mission h2{
+  font-weight: normal;
+}
+
+.mission .content-wrapper{
+  margin: 50px 0;
 }
 
 /* Contact */
@@ -271,10 +355,20 @@ footer p{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
+  color: #ffffff;
+}
+
+.contact-section h2, h3{
+  font-weight: normal;
 }
 
 address{
   line-height: normal;
+}
+
+.contact-section .content-wrapper{
+  margin: 50px 0;
 }
 
 /* -------------------- Mobile Styles - FAQ Page -------------------- */
@@ -285,6 +379,8 @@ address{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  color: #ffffff;
 }
 
 .faq-section .content-wrapper{
@@ -292,14 +388,22 @@ address{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 50px 0 45px 0;
+}
+
+.faq-section h2{
+  text-transform: capitalize;
+  font-weight: normal;
+}
+
+.faq-section h4{
+  font-weight: normal;
+  line-height: 1.5rem;
+  margin: 0 0 15px 0;
 }
 
 .faq-content{
   margin-bottom: 50px;
-}
-
-.faq-section h4{
-  line-height: 1.5rem;
 }
 
 /* ==========================================================================
