@@ -280,6 +280,7 @@ footer p{
   color: #ffffff;
   background: url('../img/mask.jpg') center no-repeat #333;
   background-size: cover;
+  padding-bottom: 330px;
 }
 
 /* Signup Button */
