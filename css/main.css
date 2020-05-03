@@ -710,6 +710,11 @@ address{
          width: 45%;
        }
 
+       /*Map*/
+       .map figure{
+         padding-bottom: 45%;
+       }
+
        /*Contact*/
        .contact-section .content-wrapper h1{
          width: 100%;
@@ -782,6 +787,13 @@ address{
       /*Reviews*/
       .prior-retreat{
         margin-left: 45px;
+      }
+
+      /*----- About Page -----*/
+
+      /*Map*/
+      .map figure{
+        padding-bottom: 37.5%;
       }
    }
 
