@@ -293,7 +293,7 @@ footer p{
   justify-content: center;
   flex-flow: row wrap;
   color: #ffffff;
-  background: url('../img/hero-img.PNG') center no-repeat #333;
+  background: url('../img/hero-img.png') center no-repeat #333;
   background-size: cover;
   max-height: 500px;
 }
