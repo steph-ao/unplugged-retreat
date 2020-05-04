@@ -104,6 +104,7 @@ textarea {
 
 html{
   font-size: 16px;
+  background-color: #202322;
 }
 
 body{
@@ -114,16 +115,19 @@ body{
 h1{
   font-family: 'Poppins', sans-serif;
   font-size: 2.25rem;
+  font-weight: normal;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875rem;
+  font-weight: normal;
 }
 
 h3, h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125rem;
+  font-weight: normal;
 }
 
 p{
@@ -277,6 +281,10 @@ footer p{
   margin: 55px 0 20px 0;
 }
 
+.social{
+  margin-bottom: 50px;
+}
+
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
 /* Hero Area */
@@ -285,9 +293,13 @@ footer p{
   justify-content: center;
   flex-flow: row wrap;
   color: #ffffff;
-  background: url('../img/mask.jpg') center no-repeat #333;
+  background: url('../img/hero-img.PNG') center no-repeat #333;
   background-size: cover;
-  padding-bottom: 330px;
+  max-height: 500px;
+}
+
+.hero-area h1{
+  font-weight: normal;
 }
 
 /* Signup Button */
@@ -329,6 +341,7 @@ footer p{
 
 .features-item{
   width: 55%;
+  margin-bottom: 55px;
 }
 
 .features i{
@@ -441,6 +454,7 @@ address{
   flex-flow: row wrap;
   background-color: #527158;
   color: #ffffff;
+  width: 100%;
 }
 
 .faq-section .content-wrapper{
@@ -601,7 +615,7 @@ address{
        footer .footer-content{
          display: flex;
          justify-content: space-around;
-         align-items: center;
+         align-items: flex-start;
          flex-flow: row wrap;
          width: 100%;
        }
@@ -613,10 +627,11 @@ address{
 
        footer h4{
          font-size: 1.5rem;
+         margin-top: 55px;
        }
 
        .copyright{
-         margin-top: 100px;
+         margin-top: 90px;
          text-align: center;
        }
 
@@ -635,7 +650,7 @@ address{
        .signup .content-wrapper{
          display: flex;
          flex-flow: row wrap;
-         justify-content: center;
+         justify-content: space-around;
          align-items: flex-start;
        }
 
@@ -644,7 +659,7 @@ address{
        }
 
        .form-description, .form{
-         width: 50%;
+         width: 45%;
          margin: 50px 0 50px 0;
        }
 
@@ -652,15 +667,15 @@ address{
          font-size: 1.5rem;
          line-height: 1.875rem;
          margin: 0;
-         width: 75%;
        }
 
        .form h3{
+         width: 100%;
          margin-bottom: 25px;
        }
 
        .form-description p{
-         width: 75%;
+         width: 100%;
          margin-top: 25px;
        }
 
@@ -669,9 +684,12 @@ address{
        }
 
        /*Features*/
+       .features-items{
+         justify-content: space-around;
+       }
+
        .features-item{
-         width: 40%;
-         padding: 0 0 0 80px;
+         width: 35%;
        }
 
        /*Reviews*/
@@ -688,21 +706,25 @@ address{
        }
 
        .reviews figure{
-         width: 45%;
+         width: 50%;
        }
 
        .reviews h2{
-         width: 65%;
+         width: 75%;
          font-size: 2.25rem;
        }
 
        .prior-retreat{
-         width: 50%;
-         margin-left: 10px;
+         width: 45%;
+         margin-left: 30px;
        }
 
        .prior-retreat h3{
          width: 100%;
+         margin: 0;
+       }
+
+       .prior-retreat p{
          margin: 0;
        }
 
@@ -775,6 +797,14 @@ address{
         width: 80%;
       }
 
+      header nav ul{
+        width: 30%;
+      }
+
+      footer .social{
+        width: 15%;
+      }
+
       /*----- Home Page -----*/
       /*Hero Area*/
       .hero-area{
@@ -782,9 +812,15 @@ address{
       }
       .hero-area h1{
         font-size: 3.75rem;
+        font-weight: normal;
+        width: 50%;
       }
 
       /*Signup*/
+      .signup .content-wrapper{
+        justify-content: space-around;
+      }
+
       .form-description, .form{
         width: 33%;
       }
@@ -793,9 +829,32 @@ address{
         width: 85%;
       }
 
+      /*Features*/
+      .features-items{
+        justify-content: space-around;
+      }
+
+      .features-item{
+        width: 17%;
+        margin: 0 80px 90px 80px;
+      }
+
+      .features h2{
+        font-weight: normal;
+        font-size: 2.25rem;
+      }
+
+      .features-item p{
+        width: 100%;
+      }
+
       /*Reviews*/
       .prior-retreat{
         margin-left: 45px;
+      }
+
+      .reviews figure{
+        width: 48%;
       }
 
       /*----- About Page -----*/
