@@ -100,6 +100,7 @@ textarea {
 
 .content-wrapper{
   width: 90%;
+  max-width: 1200px;
 }
 
 html{
@@ -295,7 +296,7 @@ footer p{
   color: #ffffff;
   background: url('../img/hero-img.png') center no-repeat #333;
   background-size: cover;
-  max-height: 500px;
+  padding-bottom: 300px;
 }
 
 .hero-area h1{
@@ -638,10 +639,6 @@ address{
        /*----- Home Page -----*/
 
        /*Hero Area*/
-       .hero-area{
-         padding: 100px 0 1000px 0;
-       }
-
        .hero-area h1{
          font-size: 3rem;
        }
@@ -813,7 +810,7 @@ address{
       .hero-area h1{
         font-size: 3.75rem;
         font-weight: normal;
-        width: 50%;
+        width: 75%;
       }
 
       /*Signup*/
